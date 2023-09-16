@@ -65,7 +65,7 @@ db.comment.find()
 10. 修改文档
 
 ```
-db.comment.update({"A":"20"},{$set:{"age":"18"}}}
+db.comment.update({"A":"20"},{$set:{"A":"18"}}}
 ```
 
 11. 删除带有{"age":"18"}的文档
