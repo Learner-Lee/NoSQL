@@ -25,3 +25,23 @@ db.democol.remove({"A":"18"})
 // 删除带有{"A":"18"}的文档
 
 db.democol.find()
+
+db.democol.insert([
+{"articleid":"10015","A":"23","time":new Date(),"num":Number(10),"state":null},
+{"articleid":"10010","A":"20","time":new Date(),"num":Number(5),"state":null},
+{"articleid":"10005","A":"18","time":new Date(),"num":Number(15),"state":null}
+]) 
+
+db.democol.remove({})
+
+db.democol.find()
+
+db.democol.find({$and:[{"articleid":"10015"},{"age":"30"}]})
+
+db.democol.find({$or:[{"articleid":"10015"},{"age":"30"}]})
+
+db.democol.find({"articleid":{$gt:"10015"}})
+
+db.democol.find({"articleid":{$lt:"10015"}})
+
+db.democol.find({"articleid":{$gte:"10015"}})

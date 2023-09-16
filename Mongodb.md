@@ -104,3 +104,9 @@ db.comment.find({"articleid":{$lt:"10015"}})
 db.comment.find({"articleid":{$gte:"10015"}})
 ```
 
+17. 删除全部文档
+
+```
+db.democol.remove({})
+```
+
